@@ -1,0 +1,115 @@
+/* max-width: 1530px;
+  margin-inline: auto; */
+
+/* width: min(1530px, 85%);
+  margin-inline: auto; */
+
+.lgScrBackground {
+  background-color: var(--lightLimeGreen);
+}
+
+.sectionContainer {
+  max-width: 1530px;
+  margin-inline: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)),
+    url("../../../../Assets/Images/bg5.png");
+  /* background: url("../../../../Assets/Images/bg5.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.bgImg {
+  width: 100%;
+}
+
+.icedTeaTag {
+  background-color: var(--limeGreen);
+  padding-inline: 0.5rem;
+  color: var(--black);
+}
+
+.shopNowButton {
+  width: 100%;
+}
+
+.contentContainer {
+  width: min(1530px, 85%);
+  margin-inline: auto;
+  overflow: hidden;
+  /* outline: 2px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.contentContainer h3 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+  /* font-size: 1.5rem; */
+  /* font-size: 8.5vw; */
+  /* font-size: 2.6rem; */
+  font-size: clamp(1.5rem, 8.5vw, 2.6rem);
+  padding-bottom: var(--space-sm);
+  color: rgb(248, 255, 227);
+  /* color: var(--white); */
+}
+
+@media screen and (min-width: 450px) {
+  .shopNowButton {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .sectionContainer {
+    background-position: center 45%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .sectionContainer {
+    background: url("../../../../Assets/Images/HeroSectionBgImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .shopNowButton {
+    width: 50%;
+  }
+
+  .icedTeaTag {
+    background-color: var(--limeGreen);
+    padding-inline: 0.5rem;
+  }
+
+  .contentContainer {
+    padding-bottom: 0;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .contentContainer h3 {
+    /* font-size: 3rem; */
+    /* font-size: 2rem; */
+    /* font-size: 5vw; */
+    font-size: clamp(2rem, 5vw, 2.9rem);
+    color: var(--black);
+    padding-bottom: var(--space-md);
+  }
+
+  .headingAndButtonContainer {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .headingAndButtonContainer {
+    width: 45%;
+  }
+}

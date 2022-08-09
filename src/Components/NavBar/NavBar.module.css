@@ -1,0 +1,87 @@
+.componentContainer {
+  background-color: var(--limeGreen);
+  /* margin-inline: auto; */
+  height: 3.75rem;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: 0.2s;
+  /* border-radius: 0 0 30px 30px; */
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: min(1530px, 85%);
+  margin-inline: auto;
+  align-items: center;
+}
+
+.menuItemsWrapper {
+  display: none;
+}
+
+.hamburgerMenuIcon {
+  fill: var(--black);
+  width: 1.8rem;
+}
+
+.logo {
+  fill: var(--black);
+  width: 5rem;
+}
+
+.shoppingCart {
+  width: 1.8rem;
+  fill: var(--black);
+}
+
+@media screen and (min-width: 480px) {
+  .hamburgerMenuIcon {
+    width: 2rem;
+  }
+  .shoppingCart {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .componentContainer {
+    height: 4.3rem;
+  }
+
+  .hamburgerMenuIcon {
+    display: none;
+  }
+
+  .shoppingCart {
+    order: 2;
+  }
+
+  .logo {
+    order: 0;
+    width: 6rem;
+    transition: 0.2s;
+  }
+
+  .menuItemsWrapper {
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+    justify-content: center;
+    order: 1;
+  }
+
+  .menuItemsWrapper li:not(:last-child) {
+    margin-right: var(--space-md);
+    transition: 0.2s;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menuItemsWrapper li:not(:last-child) {
+    margin-right: var(--space-xl);
+  }
+}

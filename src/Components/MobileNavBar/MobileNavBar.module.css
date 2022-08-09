@@ -1,0 +1,45 @@
+.componentContainer {
+  background-color: var(--limeGreen);
+  position: fixed;
+  top: -100%;
+  opacity: 0;
+  z-index: 999;
+  width: 90%;
+  height: 98vh;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.componentContainer.opened {
+  top: 0;
+  opacity: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+.exitCrossIcon {
+  fill: var(--black);
+  width: 1.75rem;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+
+.menuItemsWrapper {
+  list-style-type: none;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menuItem {
+  font-size: var(--fontSize-20);
+  font-weight: 500;
+}

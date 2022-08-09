@@ -49,7 +49,8 @@ font-family: 'Poppins', sans-serif; */
   --limeGreen: #bbd438;
   --lightLimeGreen: #ddea9c;
   --oliveGreen: #3a4310;
-  --white: #f8fbeb;
+  --white: #e4e4e4;
+  /* --white: #f8fbeb; */
   --black: #253529;
 
   /*Others*/
@@ -66,6 +67,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  background-color: var(--lightLimeGreen);
+  /* background-color: var(--lightLimeGreen); */
   overflow-x: hidden;
 }
